@@ -1,6 +1,7 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "SRParser.h"
 //! @brief  Simple Shift-reduce-parser to recognize the structure of the input and create combined tokens out of it.
@@ -10,7 +11,7 @@
 //own classes
 #include "ItemContainer.h"
 
-//Qt-crap
+//Qt-includes
 #include <QObject>
 
 class SRParser : public QObject
@@ -19,7 +20,7 @@ class SRParser : public QObject
 
 public:
 //    explicit SRParser(QObject* parent = NULL);
-    explicit SRParser(ItemContainer* container, QObject* parent = NULL);
+    explicit SRParser(ItemContainer* container, QObject* parent = nullptr);
     ~SRParser();
 
     //this is the main method!

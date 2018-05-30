@@ -1,6 +1,7 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "SRParser.cpp"
 //! @brief  Simple Shift-reduce-parser to recognize the structure of the input and create combined tokens out of it.
@@ -8,6 +9,7 @@
 #include "SRParser.h"
 #include "Item.h"
 
+//Qt-includes
 #include <QDebug>
 
 //SRParser::SRParser(QObject* parent) :
@@ -75,7 +77,7 @@ bool SRParser::process()
             qDebug() << "SRParser::process(): stop because of emptyness:" << endl;
             //! print out everything for debugging: this is the same like what should be done if everything succeeded
             qDebug() << "###########################################################";
-            QString const toPrint(this->mStack->getCurrentContent());            
+            QString const toPrint(this->mStack->getCurrentContent());
             qDebug() << toPrint << endl; //print to stderr
             QTextStream cout(stdout);
             cout << toPrint; //print to stdout
@@ -144,6 +146,7 @@ bool SRParser::reduce()
         break;
     case Item::ItemType_ItemEnd:
         this->reduceItem();
+        break;
     default:
         ; //do nothing
     }

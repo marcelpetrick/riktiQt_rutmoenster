@@ -1,6 +1,7 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "SRParser.cpp"
 //! @brief  main-function to get all the fun started .... todo: write something clever anyone wants to read ... not
@@ -9,7 +10,7 @@
 #include "ItemContainer.h"
 #include "SRParser.h"
 
-//Qt-crap
+//Qt-includes
 #include <QTextStream>
 #include <QCoreApplication>
 #include <QStringList>

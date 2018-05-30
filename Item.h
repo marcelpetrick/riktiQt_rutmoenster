@@ -1,13 +1,14 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "Item.h"
 //! @brief   Expanded struct for keeping the type and the original full string of the parsed line (string).
 
 #pragma once
 
-//Qt-crap
+//Qt-includes
 #include <QDebug>
 
 class Item

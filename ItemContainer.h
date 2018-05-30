@@ -1,6 +1,7 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "ItemContainer.h"
 //! @brief   Keeps the "list" of all line-entries: with type and cleaned "full" string
@@ -10,7 +11,7 @@
 //own classes
 #include "Item.h"
 
-//Qt-crap
+//Qt-includes
 #include <QObject>
 #include <QList>
 #include <QDebug>
@@ -24,7 +25,7 @@ private:
     Item::ItemType determineType(QString input);
 
 public:
-    explicit        ItemContainer(QObject* parent = NULL);
+    explicit        ItemContainer(QObject* parent = nullptr);
     bool            addItem(QString input);
     QString         getCurrentContent();
     QString         getItemTypeString(Item::ItemType input);

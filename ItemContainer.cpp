@@ -1,6 +1,7 @@
-//! @author Marcel Petrick; mail@marcelpetrick.it; copyright: currently all rights reserved
-//! @version    0.01 unreleased
-//! @date   20150408
+//! @author     Marcel Petrick; mail@marcelpetrick.it
+//! @license    GNU GENERAL PUBLIC LICENSE Version 3
+//! @version    0.02
+//! @date       20180530
 //!
 //! @file   "ItemContainer.cpp"
 //! @brief   Keeps the "list" of all line-entries: with type and cleaned "full" string
@@ -303,7 +304,6 @@ ItemContainer* ItemContainer::cutOff(unsigned int begin, unsigned int end)
     {
         this->mList.removeAt(iter); //remove original
     }
-
 
     return returnValue;
 }

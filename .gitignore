@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+/CLexer.pro.user.-1
+/Makefile
+/Makefile.Debug
+/Makefile.Release
+
+*.ilk
+*.pdb
+moc_*.cpp
+

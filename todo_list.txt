@@ -1,0 +1,6 @@
+- extract the part with sorting the grid-item-list by row/col into a separate function
+- prevent that grids embedded in grids will trigger also the "reduce as griD2-function (seen with the second VBox-Layout)
+- clear the output and send it to the general output; just use qDebug for the runtime-messages .... so usage
+./CLexer 'input' > output
+is doable
+- add some simple test-examples where the result is easily checkable: like simple grid (done); grid in grid, grid in other layout, ...
